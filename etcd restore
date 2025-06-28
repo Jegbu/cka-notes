@@ -1,0 +1,6 @@
+## ETCD Restore
+etcdutl snapshot restore /opt/snapshot-pre-boot.db \
+--data-dir=/var/lib/etcd-from-backup \
+--name=controlplane \
+--initial-cluster=controlplane=https://127.0.0.1:2380 \
+--initial-advertise-peer-urls=https://127.0.0.1:2380
